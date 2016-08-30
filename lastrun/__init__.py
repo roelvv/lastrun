@@ -5,7 +5,7 @@ import pickle
 
 def when():
     try:
-        f = open('.lastrun', 'r')
+        f = open('.lastrun', 'rb')
         last = pickle.load(f)
         f.close()
         return last
